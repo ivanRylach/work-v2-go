@@ -6,7 +6,7 @@ networks:
 
 services:
 
-  mongo-express:
+  redis:
     image: redis:6
     restart: always
     ports:
