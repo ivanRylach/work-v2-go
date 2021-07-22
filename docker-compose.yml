@@ -1,0 +1,15 @@
+version: '3.1'
+
+networks:
+  scheduler:
+    name: scheduler
+
+services:
+
+  mongo-express:
+    image: redis:6
+    restart: always
+    ports:
+      - "6379:6379"
+    networks:
+      - scheduler
